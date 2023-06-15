@@ -54,7 +54,7 @@ all: test
 
 build:
 	@echo "Building the binary..."
-	@go get .
+	@go get -v .
 	@go build -ldflags="-X github.com/luraproject/lura/v2/core.KrakendVersion=${VERSION} \
 	-X github.com/luraproject/lura/v2/core.GoVersion=${GOLANG_VERSION} \
 	-X github.com/luraproject/lura/v2/core.GlibcVersion=${GLIBC_VERSION} ${EXTRA_LDFLAGS}" \
@@ -66,7 +66,7 @@ test: build
 
 # Build KrakenD using docker (defaults to whatever the golang container uses)
 build_on_docker: docker-builder-linux
-	docker run --rm -it -v "${PWD}:/app" -w /app krakend/builder:${VERSION}-linux-generic make -e build
+	docker run --rm -it -v "${PWD}:/app" -w /app krakend/builder:${VERSION}-linux-generic make -e build --load
 
 # Build the container using the Dockerfile (alpine)
 docker:

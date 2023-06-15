@@ -3,6 +3,7 @@ package krakend
 import (
 	"fmt"
 
+	sizelimit "github.com/Noah-Labs-Development/krakend-sizelimit"
 	botdetector "github.com/krakendio/krakend-botdetector/v2/gin"
 	jose "github.com/krakendio/krakend-jose/v2"
 	ginjose "github.com/krakendio/krakend-jose/v2/gin"
@@ -28,6 +29,7 @@ func NewHandlerFactory(logger logging.Logger, metricCollector *metrics.Metrics, 
 	handlerFactory = metricCollector.NewHTTPHandlerFactory(handlerFactory)
 	handlerFactory = opencensus.New(handlerFactory)
 	handlerFactory = botdetector.New(handlerFactory, logger)
+	handlerFactory = sizelimit.HandlerFactory(handlerFactory)
 
 	return func(cfg *config.EndpointConfig, p proxy.Proxy) gin.HandlerFunc {
 		logger.Debug(fmt.Sprintf("[ENDPOINT: %s] Building the http handler", cfg.Endpoint))

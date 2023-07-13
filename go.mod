@@ -3,6 +3,7 @@ module github.com/krakendio/krakend-ce/v2
 go 1.17
 
 require (
+	github.com/Noah-Labs-Development/krakend-ipfilter v0.0.0-20230713085941-2e66ac96cfb6
 	github.com/Noah-Labs-Development/krakend-sizelimit v0.0.0-20230615131245-729a4c085bb9
 	github.com/gin-gonic/gin v1.9.1
 	github.com/go-contrib/uuid v1.2.0
@@ -35,7 +36,7 @@ require (
 	github.com/krakendio/krakend-usage/v2 v2.0.0
 	github.com/krakendio/krakend-viper/v2 v2.0.1
 	github.com/krakendio/krakend-xml/v2 v2.1.0
-	github.com/luraproject/lura/v2 v2.2.8
+	github.com/luraproject/lura/v2 v2.3.0
 	github.com/xeipuuv/gojsonschema v1.2.1-0.20200424115421-065759f9c3d7
 	golang.org/x/sync v0.1.0
 )
@@ -227,6 +228,7 @@ require (
 	github.com/valyala/fastrand v1.1.0 // indirect
 	github.com/xeipuuv/gojsonpointer v0.0.0-20180127040702-4e3ac2762d5f // indirect
 	github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415 // indirect
+	github.com/yl2chen/cidranger v1.0.2 // indirect
 	github.com/yuin/gopher-lua v0.0.0-20190206043414-8bfc7677f583 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	go.uber.org/atomic v1.10.0 // indirect

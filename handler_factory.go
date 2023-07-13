@@ -29,9 +29,9 @@ func NewHandlerFactory(logger logging.Logger, metricCollector *metrics.Metrics, 
 	handlerFactory = ginjose.HandlerFactory(handlerFactory, logger, rejecter)
 	handlerFactory = metricCollector.NewHTTPHandlerFactory(handlerFactory)
 	handlerFactory = opencensus.New(handlerFactory)
+	handlerFactory = ipfilter.HandlerFactory(handlerFactory, logger)
 	handlerFactory = botdetector.New(handlerFactory, logger)
 	handlerFactory = sizelimit.HandlerFactory(handlerFactory)
-	handlerFactory = ipfilter.HandlerFactory(handlerFactory, logger)
 
 	return func(cfg *config.EndpointConfig, p proxy.Proxy) gin.HandlerFunc {
 		logger.Debug(fmt.Sprintf("[ENDPOINT: %s] Building the http handler", cfg.Endpoint))

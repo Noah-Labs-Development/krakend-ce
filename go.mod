@@ -3,7 +3,7 @@ module github.com/krakendio/krakend-ce/v2
 go 1.17
 
 require (
-	github.com/Noah-Labs-Development/krakend-ipfilter v0.0.0-20230713085941-2e66ac96cfb6
+	github.com/Noah-Labs-Development/krakend-ipfilter v0.0.0-20230713092915-af8dbb6a589b
 	github.com/Noah-Labs-Development/krakend-sizelimit v0.0.0-20230615131245-729a4c085bb9
 	github.com/gin-gonic/gin v1.9.1
 	github.com/go-contrib/uuid v1.2.0

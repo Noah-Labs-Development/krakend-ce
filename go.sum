@@ -578,6 +578,8 @@ github.com/NYTimes/gziphandler v0.0.0-20170623195520-56545f4a5d46/go.mod h1:3wb0
 github.com/NYTimes/gziphandler v1.1.1/go.mod h1:n/CVRwUEOgIxrgPvAQhUUr9oeUtvrhMomdKFjzJNB0c=
 github.com/Noah-Labs-Development/krakend-ipfilter v0.0.0-20230713085941-2e66ac96cfb6 h1:nbmQ8dT+/a9vM9bscX0wNd3FsKEPAHaN2KPeXRjzyCs=
 github.com/Noah-Labs-Development/krakend-ipfilter v0.0.0-20230713085941-2e66ac96cfb6/go.mod h1:Ifm7tCJQRjRsltlYsZxN83jMZ35F3UJPi2U/Ik7YMZM=
+github.com/Noah-Labs-Development/krakend-ipfilter v0.0.0-20230713092915-af8dbb6a589b h1:EAIBCGxu4doZrWKxHYJMUcJsG1IUuUSdRj4ZuCRSstg=
+github.com/Noah-Labs-Development/krakend-ipfilter v0.0.0-20230713092915-af8dbb6a589b/go.mod h1:Ifm7tCJQRjRsltlYsZxN83jMZ35F3UJPi2U/Ik7YMZM=
 github.com/Noah-Labs-Development/krakend-sizelimit v0.0.0-20230615131245-729a4c085bb9 h1:906t/Ex4a6pvq/+YEx0B/X5ZquMAkIovsyiphuYjdVY=
 github.com/Noah-Labs-Development/krakend-sizelimit v0.0.0-20230615131245-729a4c085bb9/go.mod h1:8GItMbgWtGjBcyKdwYUqa5/+0OiI+T1GUtRlFmotZaM=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
